@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>The Little Joint</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css" type="text/css">
+    </head>
+    <body>
+        <div id="full">
+            
+            <!-- Heading -->
+            <div class="heading">
+                
+                <div Style="text-align:right;">
+                <p Style="display:inline-block;vertical-align: middle;"><img src="images/phone.png" alt=""/></p>
+                <p Style="display:inline-block;"><b>+91-7066711215</b></p>
+                </div>
+                <div>
+                <div class="btnhome"><a class="button" href="index.html">Home</a></div>
+                <div class="btnmenu"><a class="button" href="Menu_Unsignuser.jsp">Menu</a></div>
+                <div class="btnorderonline"><a class="button" href="OrderOnline_Unsignuser.jsp">Order Online</a></div>
+                <div class="btnbooktable"><a class="button" href="Reservation.html">Reservation</a></div>
+                
+                <div class="btnsingin"><Button class="button" onclick="document.getElementById('id01').style.display='block'">Sign In</Button></div>
+                
+                <div class="btnabout"><a class="button" href="About.html">About</a></div>
+                </div>
+            </div>
+            
+            <!-- *********************Sign Up Form************************* -->
+            
+            <div id="id01" class="signupform">
+                <div class="signupform-content">
+                    <ul class="twomenu">
+                        <li class="active"><a href="#signup">Sign Up</a></li>
+                        <li><a href="#login">Log In</a></li>
+                    </ul> 
+                    
+                    <div class="tab-content">
+                        <div id="signup">
+                            <h1 Style="display:inline-block;margin-left: 33%;margin-bottom: 40px;margin-top: 40px;text-align: center;color: #333333;font-weight: 300;">Sign Up for Free</h1>
+                            
+                            <form action="Register" method="Post">
+                                <div class="top-row">
+                                    <div class="field-wrap">
+                                        <input name="f_name" Style="font-size: 22px;display: block;width: 100%;height: 100%;padding: 5px 10px;background: none;background-image: none;border: 1px solid brown;color: #333333;border-radius: 0;transition: border-color .25s ease, box-shadow .25s ease;" placeholder="Enter First Name" type="text" required autocomplete="off" />
+                                    </div>
+                                    
+                                    <div class="field-wrap">
+                                        <input name="l_name" Style="font-size: 22px;display: block;width: 100%;height: 100%;padding: 5px 10px;background: none;background-image: none;border: 1px solid brown;color: #333333;border-radius: 0;transition: border-color .25s ease, box-shadow .25s ease;" placeholder="Enter Last Name" type="text" required autocomplete="off"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="field-wrap">
+                                    <input name="phone_no" class="signupinput" placeholder="Enter Phone Number" type="number" oninput="javascript: if (this.value.length > 10) this.value = this.value.slice(0, 10);" required autocomplete="off"/>
+                                </div>
+          
+                                <div class="field-wrap">
+                                    <input name="password" class="signupinput" type="password" placeholder="Create Password" required autocomplete="off"/>
+                                </div>
+                                
+                                <button type="submit" class="buttonsubmit button-block">Get Started</button>
+                            </form>
+                        </div>
+                        
+                        <div id="login">
+                            <h1 Style="display:inline-block;margin-left: 33%;margin-bottom: 40px;margin-top: 40px;text-align: center;color: #333333;font-weight: 300;">Welcome Back!</h1>
+                            
+                            <form action="Login" method="Post">
+                                <div class="field-wrap">
+                                    <input name="phone_no" Style="font-size: 22px;display: block;width: 100%;height: 100%;padding: 5px 10px;background: none;background-image: none;border: 1px solid brown;color: #333333;border-radius: 0;transition: border-color .25s ease, box-shadow .25s ease;" placeholder="Enter Phone Number" type="number" oninput="javascript: if (this.value.length > 10) this.value = this.value.slice(0, 10);" required autocomplete="off"/>
+                                </div>
+          
+                                <div class="field-wrap">
+                                    <input name="password" class="signupinput" placeholder="Enter Password" type="password" required autocomplete="off"/>
+                                </div>
+                                
+                                <p Style="margin-top: -20px;text-align: right;margin-bottom:10px;"><a href="#">Forgot Password?</a></p>
+          
+                                <button class="buttonsubmit button-block">Log In</button>
+          
+                            </form>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <script>
+            // Get the modal
+    var signupform = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === signupform) {
+            signupform.style.display = "none";
+        }
+    };
+        </script>
+            
+            <!-- Reservation -->
+            <div class="Reservation">
+                <p Style="font-size: 300%;color: darkorchid;font-family: cursive;text-align: center;margin-top:10%">Book</p>
+                <p Style="font-size:200%;color:darkorchid;font-family: monospace;font-weight: bold;text-align: center;">A TABLE</p>
+                
+                <input type="date"/>
+                <select class="partysize" name="Party Size">
+                    <option style="text-align: center">Time</option>
+                    <option>12.00</option>
+                    <option>12.30</option>
+                    <option>1.00</option>
+                    <option>1.30</option>
+                    <option>2.00</option>
+                    <option>2.30</option>
+                    <option>3.00</option>
+                    <option>3.30</option>
+                    <option>4.00</option>
+                    <option>4.30</option>
+                    <option>5.00</option>
+                    <option>5.30</option>
+                    <option>6.00</option>
+                    <option>6.30</option>
+                    <option>7.00</option>
+                    <option>7.30</option>
+                    <option>8.00</option>
+                    <option>8.30</option>
+                    <option>9.00</option>
+                    <option>9.30</option>
+                    <option>10.00</option>
+                    <option>11.30</option>
+                </select>
+                <select class="partysize" name="Party Size">
+                    <option>Party Size</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+                <Button class="btnbook" onclick="document.getElementById('id01').style.display='block'">Book</Button>
+            </div>
+            
+            <!-- End -->
+            <div id="end">
+                <div id="quicklink"><!-- Quick links -->
+                    <p Style="font-size: 20px"><b><u>Quick Links</u></b></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">About Us</a></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">Menu</a></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">Terms & Condition</a></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">F.A.Q's</a></p>
+                </div>
+                
+                <div id="connectwithus"><!-- Connect with us -->
+                    <p Style="font-size: 20px"><b><u>Connect with Us</u></b></p>
+                    <p style="display: inline;padding-top: 4%;"><a href=""><img src="images/insta.png" alt="www.google.com" /></a></p>
+                    <p style="display: inline;padding-top: 4%;"><a href=""><img src="images/fb.png" alt=""/></a></p>
+                </div>
+                
+                <div id="myaccount"><!-- My account -->
+                    <p Style="font-size: 20px"><b><u>My Account</u></b></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">Profile</a></p>
+                    <p style="padding-top: 4%;"><a class="link" href="">Order History</a></p>
+                </div>
+                
+                <div id="subscribe"><!-- Subscription -->
+                    <p Style="font-size: 17px"><b>Subscribe to our newsletter program and <br/> get update straight from the restaurant</b></p>
+                    <input type="text" name="emailforsubscription" Placeholder="Your Email Id"/>
+                    <input type="button" name="subscribe" value="Subscribe"/>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
